@@ -1,10 +1,8 @@
 from flask import Flask, request, jsonify
-# from sklearn.externals import joblib
 import joblib
 import pandas as pd
 import string
 import scipy
-from nltk.corpus import stopwords
 import pickle
 
 app = Flask(__name__)
