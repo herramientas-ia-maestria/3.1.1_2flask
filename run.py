@@ -23,4 +23,5 @@ if __name__ == '__main__':
     # vector = joblib.load('real_vectorizer.pkl', "r")
     vector = pickle.load(open("vector.pickel", "rb"))
     # app.run(port=5000)
-    app.run()
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
