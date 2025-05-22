@@ -22,4 +22,4 @@ if __name__ == '__main__':
     clf = joblib.load('model01.pkl')
     # vector = joblib.load('real_vectorizer.pkl', "r")
     vector = pickle.load(open("vector.pickel", "rb"))
-    app.run(port=8080)
+    app.run(port=5000)
