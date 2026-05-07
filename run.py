@@ -20,8 +20,7 @@ def predict(mensaje=None):
 
 if __name__ == '__main__':
     clf = joblib.load('model01.pkl')
-    # vector = joblib.load('real_vectorizer.pkl', "r")
     vector = pickle.load(open("vector.pickel", "rb"))
     # app.run(port=5000)
-    port = int(os.environ.get("PORT", 5000))
+    port = 5000
     app.run(host="0.0.0.0", port=port)
