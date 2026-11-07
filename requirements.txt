@@ -3,3 +3,6 @@ joblib
 scikit-learn
 numpy
 scipy
+pandas
+nltk
+requests
